@@ -1,0 +1,128 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("img/bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:20%;
+    align-items: center;
+    flex-direction: column;
+    width:270px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
+.g-signin2{
+    margin-top: 20px;
+    
+}
+
+
+.user-info{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #228B22;
+    border-color: #228B22;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px;
+
+}
+
+
+
+.data-container {
+    width:450px;
+    height: 600px;
+    position: relative;
+    top:20%;
+    left: 10px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.recipe {
+    padding-top: 10px;
+}
+
+.input-group {
+    padding: 15px;
+}
+
+
+.list {
+    list-style-type: none;
+    width:400px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.list > li {
+    margin:10px 10px 10px 0px;
+    text-align: center;
+    width:180px;
+    height: 200px;
+    background-color: lightskyblue;
+    
+    
+}
+
+
+.btn-add {
+    background-color: lightskyblue;
+    border: 0;
+    border-radius: 2px;
+    color:#fff;
+    margin-top: 10px;
+    width:70px;
+    height: 25px;
+}
+
+.btn-danger{
+    background-color: tomato;
+    border: 0;
+    border-radius: 2px;
+    color:#fff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width:70px;
+    height: 25px;
+}
+
+.createdAt {
+    font-size:13px;
+    margin-top:10px;
+}
+
+.noteText{
+    padding:10px;
+    text-align: left;
+}
+
