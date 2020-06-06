@@ -126,3 +126,12 @@ body,html{
     text-align: left;
 }
 
+
+.signout{
+    text-decoration: none;
+    background-color: lightskyblue;
+    color:white;
+    padding: 5px;
+    margin-top:10px;
+    font-size:15px;
+}
