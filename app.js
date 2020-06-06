@@ -1,7 +1,8 @@
 const userInfo = document.querySelector('.user-info');
 const list = document.querySelector('ul');
 const form = document.querySelector('form');
-
+const dataContainer = document.querySelector('.data-container');
+const padlock = document.querySelector('.imgPadlock');
 
 
 function onSignIn(googleUser) {
@@ -16,17 +17,14 @@ function onSignIn(googleUser) {
   `;
   userInfo.innerHTML = profileBox;
 
+    padlock.style.display = 'none';
 
 }
 
 userInfo.addEventListener('click', e =>{
-    e.preventDefault();
-
-    if(e.target.classList.contains('view-data-btn')){
-      location = "data.html";
-    }
-
-
+   e.preventDefault();
+    
+    dataContainer.style.display = "block";
 });
 
 
@@ -36,7 +34,6 @@ function signOut() {
   });
   auth2.disconnect();
 }
-
 
 
 const addRecipe = (recipe, id) => {
@@ -52,7 +49,6 @@ const addRecipe = (recipe, id) => {
 
     list.innerHTML += html;
 };
-
 
 
 const deleteRecipe = (id) => {
@@ -129,32 +125,3 @@ list.addEventListener('click', e =>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-   // const path = location.pathname;
-    // if(location.pathname === path){
-    //   // e.target.classList.contains('view-data-btn').add('test');
-    //   console.log(e.target.classList);
-    // }
-
-   
-
-// window.addEventListener('DOMContentLoaded', event => {
-  
-//   const path = location.pathname;
-//   if(location.pathname === path){
-//    const btn = document.querySelector('.btn-primary');
-  
-//     console.log(btn.classList);
-//   }
-
-// });

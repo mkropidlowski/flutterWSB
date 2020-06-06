@@ -15,27 +15,76 @@
 
     <div class="container">
       <div class="login-box">
-        <img src="img/padlock.png" width="64px" height="64px">
+        
+        <img src="img/padlock.png" width="64px" height="64px" class="imgPadlock">
         <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
         
         <div class="user-info">
-          
+              
         </div>
 
-      </div>
-    </div>
-   
+     </div>
+
+     
+   <div class="data-container" style="display: none;">
+       <form>
+           <label for="recipe" class="recipe">Add note:</label>
+           <a href="index.html" onclick="signOut();" class="signout">Sign out from Google</a>
+           <div class="input-group">
+             <input type="text" class="form-control" id="recipe" required>
+             <div class="input-group-append">
+               <input type="submit" value="Add" class="btn-add">
+             </div>
+           </div>
+         </form>
+         <div class="list-box" style="overflow-y:scroll; overflow-x:hidden; height:450px;">
+            <ul class="list">
+             
+               </ul>
+           </div>
+         </div>
+</div>
+
+</div>
 
 
 
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+
+
+<script>
+
+var firebaseConfig = {
+  apiKey: "AIzaSyAiyjCCE5EfK88mrf8j8TQn46jsmsDa3e8",
+  authDomain: "mk-data-48bcf.firebaseapp.com",
+  databaseURL: "https://mk-data-48bcf.firebaseio.com",
+  projectId: "mk-data-48bcf",
+  storageBucket: "mk-data-48bcf.appspot.com",
+  messagingSenderId: "95321731342",
+  appId: "1:95321731342:web:9359f3c4f6ad8598daa75f",
+  measurementId: "G-HFQ8G7CJHL"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+
+</script>
 
 <script src="app.js"></script>
 
 
 
-  </body>
+</body>
 </html>
 
 
 
-     
+
